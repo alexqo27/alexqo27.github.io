@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Rodolfo Alexander Quintero Ospina &ndash; Publications</title>
+<style>
+  .accordion {
+      cursor: pointer;
+      padding: 10px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      outline: none;
+      transition: 0.4s;
+      background-color: #f1f1f1;
+      margin-bottom: 5px;
+      font-size: 16px;
+      font-family: inherit;
+      color: #3399CC;      
+  }
+
+  .panel {
+      padding: 0 10px;
+      display: none;
+      overflow: hidden;
+      background-color: #f9f9f9;
+  }
+</style>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Home</div>
+<div class="menu-item"><a href="index.html">Overview</a></div>
+<div class="menu-item"><a href="publications.html" class="current">Publications</a></div>
+<div class="menu-item"><a href="talks.html">Talks</a></div>
+<div class="menu-item"><a href="teaching.html">Teaching</a></div>
+<div class="menu-item"><a href="news.html">News</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Rodolfo Alexander Quintero Ospina &ndash; Publications</h1>
+</div>
+<h2>In preparation</h2>
+<ul>
+  <li> Characterizing and benchmarking QUBO reformulations of the knapsack problem <br/>
+    <i>Rodolfo A. Quintero</i> and Luis F. Zuluaga. 
+    <button class="accordion">Click here to expand description</button>
+    <div class="panel">
+        <p>[<a href="https://engineering.lehigh.edu/sites/engineering.lehigh.edu/files/_DEPARTMENTS/ise/pdf/tech-papers/21/21T_028.pdf">Here</a>] you can find a preliminary draft as a technical report. 
+        The motivation to work on this project came after we realized that most of the literature regarding QUBO reformulations for constrained optimization problems is centered around equality constrained problems. 
+        Here, we focus on the “simplest” inequality constrained problem in this class: the knapsack problem (KP). Specifically, we derive different QUBO formulations for the KP, characterize the range of their associated penalty constants, as well as computationally 
+        benchmark them through experiments using QAOA on IBMq.</p>
+    </div>
+  </li>  
+<!-- <li><p>Characterizing and benchmarking qubo reformulations of the knapsack problem. [<a href="https://engineering.lehigh.edu/sites/engineering.lehigh.edu/files/_DEPARTMENTS/ise/pdf/tech-papers/21/21T_028.pdf">pdf</a>] <br />
+<i>Rodolfo A. Quintero</i> and Luis F Zuluaga.</p> -->
+</li>
+<li><p>Lagrangian Reformulation for Nonconvex Optimization: Tailoring Problems to Specialized Solvers <br/>
+    <i>Rodolfo A. Quintero</i>, Juan C. Vera, and Luis F. Zuluaga</p>
+    <button class="accordion">Click here to expand description</button>
+    <div class="panel">
+      <p> ArXiv submission available soon. In this paper, we were able to show, using only first principles, the equivalence between a class of equality-constrained nonconvex optimization problems and their Lagrangian relaxation. 
+        This enables the use of quantum and classical optimization solvers that take advantage of particular formulations of nonconvex problems to find approximate solutions. In addition to filling a crucial gap in the literature, 
+        our results are readily applicable to many important situations in practice. For instance, it allows us to rewrite many integer and MINLP problems as continuous optimization programs!</p>
+    </div>
+</li>
+<!-- <li><p>Lagrangian Reformulation for Nonconvex Optimization: Tailoring Problems to Specialized Solvers <br />
+<i>Rodolfo A. Quintero</i>, Juan C. Vera, and Luis F. Zuluaga </p>
+</li> -->
+</ul>
+<h2> Book Chapters </h2>
+<ul>
+  <li><p>Qubo formulations of combinatorial optimization problems for quantum computing devices. In Encyclopedia of Optimization, pages 1-13. Springer, 2022. [<a href="https://link.springer.com/referenceworkentry/10.1007/978-3-030-54621-2_853-1">Springer link</a>] <br />
+    <i>Rodolfo A. Quintero</i>, and Luis F. Zuluaga </p>
+  </li>
+</ul>
+<h2>Journal Articles</h2>
+<ul>
+<li><p>Characterization of qubo reformulations for the maximum k-colorable subgraph problem. Quantum Information Processing, 21(3):1-36, 2022.[<a href="https://link.springer.com/article/10.1007/s11128-022-03421-z">Springer link</a>] <br />
+<i>Rodolfo A. Quintero</i>, David Bernal, Tamás Terlaky, and Luis F Zuluaga </p>
+<button class="accordion">Click here to expand description</button>
+  <div class="panel">
+    <p>
+      This was my first deep dive into Quantum Computing Optimization. The idea that motivated this work originated from a <a href="https://link.springer.com/article/10.1023/A:1011968411281">paper</a> by James Abello, Sergiy Butenko, Panos Pardalos, and Mauricio Resende on finding 
+      independent sets in a graph using a continuous reformulation of the integer version of the maximum independent set problem, by penalizing the linear constraints in the objective function with a quadratic function. 
+      In our project, we generalize and prove similar results for the Maximum k-Colorable Subgraph (MkCS) problem, which encompasses the independent set problem. More specifically, we derive two QUBO reformulations for the MkCS problem and fully characterize the range of penalty parameters that can be used in these QUBO reformulations.
+      To illustrate the benefits of obtaining and characterizing these QUBO reformulations, we benchmarked different QUBO reformulations of the MkCS problem by performing numerical tests on D-Wave’s quantum annealing devices.
+    </p>  
+  </div>
+</li>
+</ul>
+
+</td>
+</tr>
+</table>
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  for (var i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+              panel.style.display = "none";
+          } else {
+              panel.style.display = "block";
+          }
+      });
+  }
+</script>
+</body>
+</html>
